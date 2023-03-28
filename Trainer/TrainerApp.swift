@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct TrainerApp: App {
+    @State private var workouts = Workout.data
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WorkoutListView(workouts: $workouts)
         }
     }
 }

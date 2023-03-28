@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		A20752F029D2CD6E000D3D99 /* TrainerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20752EF29D2CD6E000D3D99 /* TrainerApp.swift */; };
-		A20752F229D2CD6E000D3D99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20752F129D2CD6E000D3D99 /* ContentView.swift */; };
+		A20752F229D2CD6E000D3D99 /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20752F129D2CD6E000D3D99 /* WorkoutListView.swift */; };
 		A20752F429D2CD6F000D3D99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20752F329D2CD6F000D3D99 /* Assets.xcassets */; };
 		A20752F729D2CD6F000D3D99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20752F629D2CD6F000D3D99 /* Preview Assets.xcassets */; };
 		A207530129D2CD6F000D3D99 /* TrainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207530029D2CD6F000D3D99 /* TrainerTests.swift */; };
 		A207530B29D2CD6F000D3D99 /* TrainerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207530A29D2CD6F000D3D99 /* TrainerUITests.swift */; };
 		A207530D29D2CD6F000D3D99 /* TrainerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207530C29D2CD6F000D3D99 /* TrainerUITestsLaunchTests.swift */; };
 		A207531B29D2CDE7000D3D99 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A207531A29D2CDE7000D3D99 /* ComposableArchitecture */; };
+		A207531D29D2D02A000D3D99 /* WorkoutListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207531C29D2D02A000D3D99 /* WorkoutListFeature.swift */; };
+		A207532029D2D344000D3D99 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207531F29D2D344000D3D99 /* Workout.swift */; };
+		A207532229D2D357000D3D99 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207532129D2D357000D3D99 /* Exercise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,7 @@
 /* Begin PBXFileReference section */
 		A20752EC29D2CD6E000D3D99 /* Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20752EF29D2CD6E000D3D99 /* TrainerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerApp.swift; sourceTree = "<group>"; };
-		A20752F129D2CD6E000D3D99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A20752F129D2CD6E000D3D99 /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
 		A20752F329D2CD6F000D3D99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A20752F629D2CD6F000D3D99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A20752FC29D2CD6F000D3D99 /* TrainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +48,9 @@
 		A207530629D2CD6F000D3D99 /* TrainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A207530A29D2CD6F000D3D99 /* TrainerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerUITests.swift; sourceTree = "<group>"; };
 		A207530C29D2CD6F000D3D99 /* TrainerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A207531C29D2D02A000D3D99 /* WorkoutListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListFeature.swift; sourceTree = "<group>"; };
+		A207531F29D2D344000D3D99 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		A207532129D2D357000D3D99 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +102,9 @@
 		A20752EE29D2CD6E000D3D99 /* Trainer */ = {
 			isa = PBXGroup;
 			children = (
+				A207531E29D2D339000D3D99 /* Model */,
 				A20752EF29D2CD6E000D3D99 /* TrainerApp.swift */,
-				A20752F129D2CD6E000D3D99 /* ContentView.swift */,
+				A207532329D2D54A000D3D99 /* WorkoutList */,
 				A20752F329D2CD6F000D3D99 /* Assets.xcassets */,
 				A20752F529D2CD6F000D3D99 /* Preview Content */,
 			);
@@ -127,6 +134,24 @@
 				A207530C29D2CD6F000D3D99 /* TrainerUITestsLaunchTests.swift */,
 			);
 			path = TrainerUITests;
+			sourceTree = "<group>";
+		};
+		A207531E29D2D339000D3D99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A207532129D2D357000D3D99 /* Exercise.swift */,
+				A207531F29D2D344000D3D99 /* Workout.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A207532329D2D54A000D3D99 /* WorkoutList */ = {
+			isa = PBXGroup;
+			children = (
+				A207531C29D2D02A000D3D99 /* WorkoutListFeature.swift */,
+				A20752F129D2CD6E000D3D99 /* WorkoutListView.swift */,
+			);
+			path = WorkoutList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A20752F229D2CD6E000D3D99 /* ContentView.swift in Sources */,
+				A207532229D2D357000D3D99 /* Exercise.swift in Sources */,
+				A20752F229D2CD6E000D3D99 /* WorkoutListView.swift in Sources */,
+				A207531D29D2D02A000D3D99 /* WorkoutListFeature.swift in Sources */,
 				A20752F029D2CD6E000D3D99 /* TrainerApp.swift in Sources */,
+				A207532029D2D344000D3D99 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,8 +625,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 0.9.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
